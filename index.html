@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<title>Tournament Atlas</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG0QK311WX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZG0QK311WX');
+</script>
+<link rel='preload' href='styles.css' as='style'/>
+</head>
+<body>
+  <header class='brand'>
+    <div class='logo'>Tournament Atlas</div>
+    <nav><a href="#groups">Groups</a><a href="#bracket">Bracket</a><a href="#news">News</a></nav>
+  </header>
+  <section class='hero'>
+    <h1>Navigate the World Cup of football</h1>
+    <p>Groups, fixtures and live knockout brackets in one view.</p>
+  </section>
+  <section id='groups' class='panel'>
+    <h2>Group Standings</h2>
+    <div class='grid' id='groupsGrid'>
+      <div class='card'>Group A: 1. Team X 7 pts<br/>2. Team Y 5 pts</div>
+      <div class='card'>Group B: 1. Team U 6 pts<br/>2. Team V 4 pts</div>
+      <div class='card'>Group C: 1. Team P 9 pts<br/>2. Team Q 3 pts</div>
+    </div>
+  </section>
+  <section id='bracket' class='panel'>
+    <h2>Knockout Bracket</h2>
+    <div class='grid' id='bracketGrid'>
+      <div class='card'>Quarterfinals</div>
+      <div class='card'>Semifinals</div>
+      <div class='card'>Final</div>
+    </div>
+  </section>
+  <section id='news' class='panel'>
+    <h2>News</h2>
+    <ul>
+      <li>Fixture list updated for next week.</li>
+      <li>Venue changes announced for knockouts.</li>
+    </ul>
+  </section>
+  <footer class='siteFooter'>
+    <p>&copy; 2026 Tournament Atlas</p>
+    <button id='darkToggle'>Dark</button>
+  </footer>
+  <script>
+    document.getElementById('darkToggle').addEventListener('click',()=>{document.body.classList.toggle('dark');});
+  </script>
+</body>
+</html>
