@@ -1,0 +1,9 @@
+:root{--bg:#0e141a;--panel:#11161c;--text:#e8f0f6;--accent:#f39c12}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial}
+header.brand{display:flex;justify-content:space-between;gap:12px;padding:12px 20px;background:#0c151d;border-bottom:1px solid #223}
+nav a{color:#cbd5e1;margin:0 6px;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#1a232a;border-radius:8px;padding:12px}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+footer.siteFooter{display:flex;justify-content:space-between;align-items:center;padding:8px 16px;background:#0b1117;border-top:1px solid #222}
